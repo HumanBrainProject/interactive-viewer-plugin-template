@@ -12,5 +12,9 @@
   "devDependencies": {
     "express": "^4.16.4",
     "rxjs": "^6.3.3"
+  },
+  "types": "typings/index.d.ts",
+  "dependencies": {
+    "request": "^2.88.0"
   }
 }

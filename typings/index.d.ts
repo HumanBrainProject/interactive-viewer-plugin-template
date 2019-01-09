@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs'
+/// <reference types = "javascript" />
 
 interface InteractiveViewer {
 
