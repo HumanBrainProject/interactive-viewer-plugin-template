@@ -4,13 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "node ./index",
+    "dev": "webpack --watch --progress & nodemon ./index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "rxjs": "^6.3.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "dotenv": "^7.0.0",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "rxjs": "^6.3.3"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack-node-externals": "^1.7.2"
   }
 }
