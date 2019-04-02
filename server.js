@@ -17,14 +17,14 @@ if (process.env.NODE_ENV !== 'production') {
 const publicPath = path.resolve(__dirname, 'dist', 'public')
 app.use(express.static(publicPath))
 
-const HOSTNAME = process.env.HOSTNAME || `http://localhost`
+const HOSTNAME = process.env.HOSTNAME || `http://localhost:3001`
 const PORT = process.env.PORT || 3001
 
 const manifest = {
   name: process.env.PLUGIN_NAME || 'fzj.xg.templateTranslate',
   displayName: 'Template Translate',
-  templateURL: `${HOSTNAME}:${PORT}/template`,
-  scriptURL: `${HOSTNAME}:${PORT}/client.js`,
+  templateURL: `${HOSTNAME}/template`,
+  scriptURL: `${HOSTNAME}/client.js`,
   persistency: true
 }
 
