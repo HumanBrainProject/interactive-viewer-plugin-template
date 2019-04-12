@@ -15,7 +15,7 @@ def readcsv(filename):
     return connectivity_matrix    
 
 async def return_auto_complete(request):
-     return web.Response(status=200,content_type="application/json",body=dictAutocompleteString)
+     return web.Response(status=200,content_type="application/json",body='OK')
 
 async def handle_post(request):
     if request.has_body:
