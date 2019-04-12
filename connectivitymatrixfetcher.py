@@ -3,9 +3,6 @@ import aiohttp_cors
 import json
 import csv
 
-with open("genesymbols.txt", "r") as f:
-    dictAutocompleteString = f.read()
-
 def readcsv(filename):
     connectivity_matrix = {}
     input_file = csv.DictReader(open(filename))
