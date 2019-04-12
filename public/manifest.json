@@ -1,5 +1,5 @@
 {
   "name": "fzj.xg.connectivity-frontend",
-  "templateURL": "http://localhost:3001/template.html",
-  "scriptURL": "http://localhost:3001/script.js"
+  "templateURL": "https://conn-frontend-connectivity-matrix.apps-dev.hbp.eu/template.html",
+  "scriptURL": "https://conn-frontend-connectivity-matrix.apps-dev.hbp.eu/script.js"
 }

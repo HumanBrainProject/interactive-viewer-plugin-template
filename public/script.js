@@ -1,7 +1,7 @@
 (() => {
   const PLUGIN_NAME = `fzj.xg.connectivity-frontend`
   const DOM_PARSER = new DOMParser()
-  const URL_BASE = 'http://localhost:8003'
+  const URL_BASE = 'https://conn-frontend-connectivity-matrix.apps-dev.hbp.eu'
   //const URL_BASE = 'http://medpc055.ime.kfa-juelich.de:8003'
 
   class ConnectivityVisualizerSearchComponent extends HTMLElement {
