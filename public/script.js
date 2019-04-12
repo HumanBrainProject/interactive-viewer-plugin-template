@@ -118,9 +118,13 @@
     }
 
     visualizeConnectivity(labelIndex, regionName) {
+      if (!this.connectivityDict) {
+        console.log('connectivity Dict not yet loaded')
+        return
+      }
+      const colourMap = new Map()
       for (let i = 0; i < this.selectedRegions.length; i++) {
         if (this.selectedRegions[i].labelIndex != labelIndex) {
-          const colourMap = new Map()
           if (this.connectivityDict[regionName] == null) {
             console.log(" " + regionName + " does not exist in the matrix")
           } else {
