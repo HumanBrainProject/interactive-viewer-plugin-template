@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 
 app.use((_req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'localhost')
+  res.header('Access-Control-Allow-Origin', '*')
   next()
 })
 

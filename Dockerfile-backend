@@ -1,0 +1,7 @@
+FROM python:3
+RUN pip install aiohttp aiohttp_cors
+
+COPY . /conn-backend
+WORKDIR /conn-backend
+
+ENTRYPOINT [ "python", "connectivitymatrixfetcher.py" ]

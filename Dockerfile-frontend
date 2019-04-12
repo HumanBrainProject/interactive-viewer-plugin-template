@@ -1,0 +1,6 @@
+FROM node:8
+COPY . /connectivity-front-end
+WORKDIR /connectivity-front-end
+RUN npm i
+
+ENTRYPOINT [ "npm", "start" ]
