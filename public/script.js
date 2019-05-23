@@ -7,7 +7,7 @@
   /**
    * pluginControl references plugin name. Good idea to defined it
    */
-  const PLUGINNAME = `fzj.xg.pluginTemplate`
+  const PLUGINNAME = `fzj.xg.iv-plugin-template`
   const SUBSCRIPTIONS = []
   SUBSCRIPTIONS.push(
     interactiveViewer.metadata.datasetsBSubject.subscribe(ds => {
