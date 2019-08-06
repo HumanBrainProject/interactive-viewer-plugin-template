@@ -1,5 +1,5 @@
 {
   "name": "fzj.xg.iv-plugin-template",
-  "templateURL": "http://localhost:3001/template.html",
-  "scriptURL" : "http://localhost:3001/script.js"
+  "templateURL": "https://iv-plugin-test.apps-dev.hbp.eu/template.html",
+  "scriptURL" : "https://iv-plugin-test.apps-dev.hbp.eu/script.js"
 }
