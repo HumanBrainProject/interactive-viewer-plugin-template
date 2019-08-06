@@ -3,6 +3,8 @@
  * use const/let. Avoid using var
  */
 (() => {
+  console.log(`it works`)
+
 
   /**
    * pluginControl references plugin name. Good idea to defined it
@@ -25,4 +27,18 @@
       SUBSCRIPTIONS.pop().unsubscribe()
     }
   })
+
+
+  setTimeout(() => {
+    interactiveViewer.pluginControl[PLUGINNAME].setProgressIndicator(0.05)
+  }, 100)
+
+  setTimeout(() => {
+    interactiveViewer.pluginControl[PLUGINNAME].setProgressIndicator(0.5)
+  }, 5000)
+
+  setTimeout(() => {
+    interactiveViewer.pluginControl[PLUGINNAME].setProgressIndicator(null)
+    interactiveViewer.pluginControl[PLUGINNAME].blink()
+  }, 9000)
 })()
